@@ -1,0 +1,26 @@
+.branches {
+    padding: 0 20px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 228px;
+    }
+    &__icon {
+        width: 28px;
+    }
+    &__descr {
+        width: 192px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #242424;
+    }
+    &__text {
+        font-size: 12px;
+    }
+}
