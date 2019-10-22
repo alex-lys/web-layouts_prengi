@@ -1,0 +1,82 @@
+.promo {
+    position: relative;
+    min-height: 700px;
+    padding-top: 40px;
+    background: url('../img/promo-bg.jpg') center (center/cover) no-repeat;
+    &__slider {
+        margin-top: 26px;
+    }
+    &__slide {
+        // margin: 0 20px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        min-height: 569px;
+    }
+    &__descr {
+        margin-top: 106px;
+        width: 530px;
+    }
+    &__title {
+        font-size: 42px;
+        line-height: 1.15;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    &__subtitle {
+        margin: 27px 0 40px 0;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.25;
+        color: #ffffff;
+        span {
+            font-weight: 400;
+            color: #ffffff;
+        }
+    }
+    &__nav {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 105px;
+        top: 620px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__left {
+        cursor: pointer;
+    }
+    &__right {
+        cursor: pointer;
+    }
+    &__dots {
+        .slick-dots {
+            margin: 0 auto;
+            padding: 0px;
+            height: 32px;
+            li {
+                display: inline-block;
+                button {
+                    margin: 0 6px;
+                    padding: 5px;
+                    font-size: 0;
+                    line-height: 0;
+                    width: 11px;
+                    height: 11px;
+                    border: 1px solid #ffffff;
+                    border-radius: 100%;
+                    background: none;
+                    cursor: pointer;
+                }
+            }
+            .slick-active {
+                button {
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+
+}

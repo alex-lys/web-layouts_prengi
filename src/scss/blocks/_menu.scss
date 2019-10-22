@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    &__item {
+        a {
+            font-size: 13px;
+            line-height: 65px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    }
+}

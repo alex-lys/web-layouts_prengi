@@ -34,7 +34,7 @@
 @font-face {
     font-family: 'Roboto';
     font-display: swap;
-    src: local('Roboto'), local('Roboto-Regular'),
+    src: local('Roboto Regular'), local('Roboto-Regular'),
         url('../fonts/Roboto-Regular.woff2') format('woff2'),
         url('../fonts/Roboto-Regular.woff') format('woff'),
         url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
@@ -44,6 +44,7 @@
 
 @font-face {
     font-family: 'Roboto';
+    font-display: swap;
     src: local('Roboto Light'), local('Roboto-Light'),
         url('../fonts/Roboto-Light.woff2') format('woff2'),
         url('../fonts/Roboto-Light.woff') format('woff'),

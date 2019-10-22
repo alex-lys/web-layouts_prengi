@@ -1,5 +1,5 @@
 .branches {
-    padding: 0 20px;
+    padding: 20px 0;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -22,5 +22,11 @@
     }
     &__text {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .branches {
+        display: none;
     }
 }
