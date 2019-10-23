@@ -1,0 +1,48 @@
+.tasks {
+    padding: 80px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        padding: 0 0 30px 0;
+        width: 360px;
+        min-height: 255px;
+        border: solid 1px #ececec;
+        border-radius: 3px;
+        background: url('../img/tasks-item-bg-01.png') right -37px bottom -37px no-repeat;
+        &_resolved {
+            background: url('../img/tasks-item-bg-02.png') right -30px bottom -35px no-repeat;
+        }
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+    }
+    &__text {
+        margin: 0 auto;
+        width: 236px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: center;
+        &_resolved {
+            width: 264px;
+            font-weight: 600;
+        }
+    }
+    &__arrow {
+        margin-top: 50px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        margin: 33px 0 35px 0;
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
