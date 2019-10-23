@@ -46,3 +46,22 @@
         text-transform: uppercase;
     }
 }
+@media (max-width: 991px) {
+    .tasks {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item  {
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .tasks {
+        &__item {
+            width: 290px;
+            min-height: 290px;
+        }
+    }
+}
