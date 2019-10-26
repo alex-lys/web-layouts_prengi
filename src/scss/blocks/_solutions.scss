@@ -26,24 +26,31 @@
         }
         &__dots {
             margin: 25px auto 0 auto;
-            width: 843px;
+            width: 850px;
             padding: 8px 0;
             border: 1px solid #ffffff;
             border-radius: 4px;
             .slick-dots {
                 padding: 0;
                 margin: 0;
+                text-align: center;
                 li {
                     display: inline-block;
-                    padding: 0 20px;
+                    padding: 0 25px;
                     border-right: 1px solid #ffffff;
                     &:last-child {
                         border: none;
                     }
                 }
+                .slick-active {
+                    button {
+                        color: #00c2f0;
+                    }
+                }
             }
         }
         &__dot {
+            padding: 0;
             height: 49px;
             background: none;
             border: none;
@@ -69,6 +76,84 @@
         &__right {
             right: -155px;
             left: auto;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .solutions {
+        min-height: 780px;
+        &-slider {
+            &__container {
+                width: 700px;
+                background-size: 700px;
+            }
+            &__wrapper {
+                padding-top: 27px;
+                width: 520px;
+                min-height: 420px;
+            }
+            &__dots {
+                width: 700px;
+                .slick-dots {
+                    li {
+                        padding: 0 10px;
+                    }
+                }
+            }
+            &__left {
+                left: -68px;
+            }
+            &__right {
+                right: -68px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .solutions {
+        min-height: 460px;
+        &__title {
+            width: 520px;
+            font-size: 26px;
+        }
+        &-slider {
+            display: flex;
+            justify-content: start;
+            margin: 0 auto;
+            &__container {
+                width: 340px;
+                background-size: 340px;
+            }
+            &__wrapper {
+                padding-top: 13px;
+                width: 250px;
+                min-height: 200px;
+            }
+            &__dots {
+                width: 150px;
+                border: 0;
+                .slick-dots {
+                    text-align: left;
+                    li {
+                        display: block;
+                        border: 0;
+                    }
+                }
+            }
+            &__dot {
+                height: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .solutions {
+        min-height: 120px;
+        &__title {
+            width: 100%;
+        }
+        &-slider {
+            display: none;
         }
     }
 }

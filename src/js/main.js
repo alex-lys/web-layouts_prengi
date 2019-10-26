@@ -29,7 +29,15 @@ $(document).ready(function(){
             return '<button class="solutions-slider__dot">' + $(slider.$slides[i]).attr('title') + '</button>';
         },
         prevArrow: '<div class="solutions-slider__left"><img src="img/solutions-slider-left.png" alt=""></div>',
-        nextArrow: '<div class="solutions-slider__right"><img src="img/solutions-slider-right.png" alt=""></div>'
+        nextArrow: '<div class="solutions-slider__right"><img src="img/solutions-slider-right.png" alt=""></div>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
 
     });
 
