@@ -1,5 +1,6 @@
 $(document).ready(function(){
     //Slick Slider Promo
+
     $('.promo__slider').slick({
         speed: 1200,
         infinite: true,
@@ -13,10 +14,26 @@ $(document).ready(function(){
 
     });
 
+    //Slick Slider Solutions
+
+    $('.solutions-slider__wrapper').slick({
+        speed: 1200,
+        fade: true,
+        infinite: true,
+        arrows: true,
+        dots: true,
+        cssEase: 'ease',
+        // appendArrows: $('.solutions-slider__nav'),
+        appendDots: $('.solutions-slider__dots'),
+        customPaging: function(slider, i) { 
+            return '<button class="solutions-slider__dot">' + $(slider.$slides[i]).attr('title') + '</button>';
+        },
+        prevArrow: '<div class="solutions-slider__left"><img src="img/solutions-slider-left.png" alt=""></div>',
+        nextArrow: '<div class="solutions-slider__right"><img src="img/solutions-slider-right.png" alt=""></div>'
+
+    });
+
     //Mobile Menu
-    // let buttonMenuMobile = $('.namburger'),
-    //     buttonMenuClose = $('.menu__close'),
-    //     menu = $('.menu');
 
     const showMobileMenu = (element) => {
         element.on('click', function() {

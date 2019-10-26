@@ -1,0 +1,74 @@
+.solutions {
+    padding: 80px 0 60px 0;
+    min-height: 889px;
+    background: url('../img/solutions-bg.jpg') center (center/cover) no-repeat;
+    &__title {
+        margin: 0 auto;
+        width: 622px;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: center;
+    }
+    &-slider {
+        position: relative;
+        &__container {
+            margin: 35px auto 0 auto;
+            width: 948px;
+            background: url('../img/solutions-macbook-air.png') no-repeat;
+        }
+        &__wrapper {
+            margin: 0 auto;
+            padding-top: 37px;
+            width: 695px;
+            min-height: 560px;
+        }
+        &__dots {
+            margin: 25px auto 0 auto;
+            width: 843px;
+            padding: 8px 0;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            .slick-dots {
+                padding: 0;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    padding: 0 20px;
+                    border-right: 1px solid #ffffff;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+        &__dot {
+            height: 49px;
+            background: none;
+            border: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: #ffffff;
+            &:hover {
+                color: #00c2f0;
+            }
+        }
+        &__nav {
+            position: absolute;
+            top: 300px;
+            width: 100%;
+        }
+        &__left, &__right {
+            position: absolute;
+            top: 50%;
+            left: -155px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        &__right {
+            right: -155px;
+            left: auto;
+        }
+    }
+}
