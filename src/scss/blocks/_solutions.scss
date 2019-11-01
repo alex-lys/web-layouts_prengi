@@ -79,6 +79,18 @@
         }
     }
 }
+@media (max-width: 1199px) {
+    .solutions {
+        &-slider {
+            &__left {
+                left: -98px;
+            }
+            &__right {
+                right: -98px;
+            } 
+        }
+    }
+}
 @media (max-width: 991px) {
     .solutions {
         min-height: 780px;

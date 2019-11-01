@@ -1,0 +1,63 @@
+.deployment {
+    &__wrapper {
+        position: relative;
+    }
+    &__title {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 380px;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff;
+    }
+    &-items {
+        display: flex;
+        justify-content: center;
+        min-height: 580px;
+        &__item {
+            padding: 0 45px;
+            width: 50%;
+            &_left {
+                text-align: right;
+                background: url('../img/deployment-cloud.jpg') center (center/cover) no-repeat;
+            }
+            &_right {
+                text-align: left;
+                background: url('../img/deployment-server.jpg') center (center/cover) no-repeat;
+            }
+        }
+        &__descr {
+            position: absolute;
+            top: 232px;
+            padding: 34px 0 0 38px;
+            max-width: 600px;
+        }
+        &__square {
+            position: absolute;
+            top: 232px;
+            z-index: 1;
+            width: 167px;
+            height: 167px;
+            background: rgba($color: #00c2f0, $alpha: .3);
+            &_left {
+                right: calc(50% - -45px);
+            }
+        }
+        &__title {
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        &__text {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #ffffff;
+        }
+    }
+}
