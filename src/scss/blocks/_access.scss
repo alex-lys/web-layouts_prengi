@@ -1,0 +1,14 @@
+.access {
+    padding: 80px 0;
+    &__img {
+        margin: 0 auto 74px auto;
+        width: 302px;
+    }
+}
+@media (max-width: 575px) {
+    .access {
+        &__img {
+            width: 270px;
+        }
+    }
+}

@@ -2,19 +2,6 @@
     &__wrapper {
         position: relative;
     }
-    &__title {
-        position: absolute;
-        z-index: 1;
-        top: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 380px;
-        font-size: 30px;
-        line-height: 1.2;
-        font-weight: 600;
-        text-align: center;
-        color: #ffffff;
-    }
     &-items {
         display: flex;
         justify-content: center;
@@ -115,12 +102,6 @@
 }
 @media (max-width: 767px) {
     .deployment {
-        &__title {
-            position: relative;
-            top: 0;
-            margin-top: 20px;
-            color: $text-color;
-        }
         &-items {
             flex-direction: column;
             justify-content: start;
@@ -166,9 +147,6 @@
 }
 @media (max-width: 575px) {
     .deployment {
-        &__title {
-            width: 100%;
-        }
         &-items {
             &__square {
                 top: 80px;

@@ -16,6 +16,10 @@ button {
     color: #ffffff;
     border: 0;
     border-radius: 5px;
+    &_center {
+        display: block;
+        margin: 30px auto 0 auto;
+    }
 }
 @media (max-width: 767px) {
     .button {
@@ -29,5 +33,9 @@ button {
     .button {
         display: block;
         margin: 0 auto;
+        &_center {
+            display: block;
+            margin: 30px auto 0 auto;
+        }
     }
 }
