@@ -3,6 +3,7 @@
 @import 'libs/slick';
 @import 'base/base';
 @import 'base/titles';
+@import 'base/animations';
 @import 'blocks/branches';
 @import 'blocks/promo';
 @import 'blocks/header';
@@ -12,4 +13,6 @@
 @import 'blocks/solutions';
 @import 'blocks/advantages';
 @import 'blocks/deployment';
-@import 'blocks/_access';
+@import 'blocks/access';
+@import 'blocks/footer';
+@import 'blocks/modal';

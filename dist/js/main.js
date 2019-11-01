@@ -52,5 +52,19 @@ $(document).ready(function(){
     showMobileMenu($('.hamburger'));
     showMobileMenu($('.menu__close'));
 
+    //Modal
 
+    const showModal = (element) => {
+        element.on('click', function() {
+            $('.modal').toggleClass('modal_active');
+        })
+        $('.modal')
+    }
+
+    showModal($('.button'));
+    showModal($('.modal__close'));
+
+    //Phone mask
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
